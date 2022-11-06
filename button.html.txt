@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.subs{
+background-color:#0062FF;
+display: block;
+ margin-left: 25%;
+ margin-right: 25%;
+  width: 50%;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<button class="subs" onclick="myFunction()">Subscribe</button>
+<div id="script_test"></div>
+<script>
+function myFunction() {
+var script = document.createElement('script');
+script.src ='https://fgrade.myfreshworks.com/crm/sales/web_forms/e7f1d3562567bec4c7eac6c19991b4350a689fb1ea3057f4282055514de31b23/form.js';
+script.crossorigin='anonymous';
+script.id='fs_e7f1d3562567bec4c7eac6c19991b4350a689fb1ea3057f4282055514de31b23';
+document.getElementById('script_test').appendChild(script);
+}
+function closeWin() {
+  myWindow.close();
+}
+</script>     
+</body>
+</html> 
